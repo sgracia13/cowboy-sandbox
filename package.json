@@ -1,0 +1,7 @@
+{
+  "name": "ranch-api",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": { "test": "vitest run", "build": "tsc -p ." },
+  "devDependencies": { "typescript": "^5.6.0", "vitest": "^2.1.0" }
+}
