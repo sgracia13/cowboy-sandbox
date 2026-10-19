@@ -25,7 +25,6 @@ export function weeklyTotals(rows: Row[]): { start: string; total: number }[] {
 }
 
 export function busiestWeek(rows: Row[]): string | undefined {
-  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
   const sorted = weeklyTotals(rows).sort((a, b) => b.total - a.total);
-  return sorted.length ? sorted[0]!.start : undefined;
+  return sorted.length ? sorted[0].start : undefined;
 }
